@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Navien Credentials",
+        "description": "Enter your Navien NaviLink account credentials",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reconfigure": {
+        "title": "Update Navien account",
+        "description": "Update the saved account password without removing the integration.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid credentials",
+      "no_devices_available": "No devices found for this account",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "reauth_successful": "Reauthorization successful",
+      "cannot_change_account": "The account email cannot be changed during reconfiguration.",
+      "reconfigure_successful": "The account settings were updated successfully.",
+      "already_configured": "This Navien account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Navien options",
+        "description": "Adjust how often Home Assistant refreshes device status.",
+        "data": {
+          "polling_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "dhw_setting_temp": {"name": "DHW set temperature"},
+      "avg_inlet_temp": {"name": "Average inlet temperature"},
+      "avg_outlet_temp": {"name": "Average outlet temperature"},
+      "avg_heating_power": {"name": "Average heating power"},
+      "heating_power": {"name": "Heating power"}
+    },
+    "water_heater": {
+      "water_heater": {"name": "Water heater"}
+    }
+  }
+}

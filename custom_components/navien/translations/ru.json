@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Учетные данные Navien",
+        "description": "Введите логин и пароль от аккаунта Navien NaviLink",
+        "data": {
+          "username": "Email",
+          "password": "Пароль"
+        }
+      },
+      "reconfigure": {
+        "title": "Обновление аккаунта Navien",
+        "description": "Измените сохранённый пароль без удаления интеграции.",
+        "data": {
+          "username": "Email",
+          "password": "Пароль"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Неверный логин или пароль",
+      "no_devices_available": "Для этой учётной записи не найдено устройств",
+      "unknown": "Неизвестная ошибка"
+    },
+    "abort": {
+      "reauth_successful": "Повторная авторизация выполнена успешно",
+      "cannot_change_account": "Email учётной записи нельзя изменить через перенастройку",
+      "reconfigure_successful": "Параметры учётной записи успешно обновлены",
+      "already_configured": "Эта учётная запись Navien уже настроена"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Параметры Navien",
+        "description": "Настройте, как часто Home Assistant обновляет состояние устройств.",
+        "data": {
+          "polling_interval": "Интервал опроса (секунды)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "dhw_setting_temp": {"name": "Уставка температуры ГВС"},
+      "avg_inlet_temp": {"name": "Средняя входящая температура"},
+      "avg_outlet_temp": {"name": "Средняя исходящая температура"},
+      "avg_heating_power": {"name": "Средняя тепловая мощность"},
+      "heating_power": {"name": "Текущая мощность нагрева"}
+    },
+    "water_heater": {
+      "water_heater": {"name": "Водонагреватель"}
+    }
+  }
+}

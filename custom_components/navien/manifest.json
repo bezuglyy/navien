@@ -1,0 +1,19 @@
+{
+  "domain": "navien",
+  "name": "Navien",
+  "version": "1.5.2",
+  "config_flow": true,
+  "documentation": "https://github.com/bezuglyy/navien",
+  "issue_tracker": "https://github.com/bezuglyy/navien/issues",
+  "requirements": [
+    "AWSIoTPythonSDK==1.6.0"
+  ],
+  "dependencies": [],
+  "codeowners": [
+    "@bezuglyy"
+  ],
+  "iot_class": "cloud_push",
+  "loggers": [
+    "custom_components.navien"
+  ]
+}

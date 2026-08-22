@@ -1,45 +1,34 @@
-# Navien для Home Assistant
+# Navien
 
-Кастомная интеграция для Home Assistant с поддержкой настройки через UI.
+Кастомная интеграция для [Home Assistant](https://www.home-assistant.io) · версия **1.5.2**.
+
+![icon](custom_components/navien/brand/icon.png)
+
+| | |
+|---|---|
+| Домен | `navien` |
+| Версия | 1.5.2 |
+| Тип | custom integration |
+
+## Описание
+
+Интеграция котлов Navien через NaviLink (вода, температура, режимы).
 
 ## Возможности
-- настройка через `Config Flow`
-- сущности:
-  - `water_heater`
-  - `sensor`
-  - `switch`
-  - `number`
-- облачное подключение NaviLink
-- готово для установки через HACS
 
-## Установка через HACS
-1. Открой **HACS → Интеграции → Пользовательские репозитории**.
-2. Добавь репозиторий:
-   ```text
-   https://github.com/bezuglyy/navien
-   ```
-3. Выбери тип **Integration**.
-4. Установи интеграцию и перезапусти Home Assistant.
+- Числовые настройки и параметры
+- Сенсоры и мониторинг состояния
+- Переключатели и вкл/выкл устройства
+- Управление водонагревателем
 
-## Ручная установка
-Скопируй папку:
-```text
-custom_components/navien
-```
-в:
-```text
-/config/custom_components/navien
-```
+## Установка
 
-## Структура
-```text
-custom_components/navien/
-```
+1. Скопируйте папку `custom_components/{domain}/` в каталог `custom_components/` конфигурации Home Assistant.
+2. Перезапустите Home Assistant.
+3. Настройки → Устройства и службы → Добавить интеграцию → **{mname}**.
 
-## Совместимость
-- Home Assistant: 2025.10.0+
-- Версия интеграции: 1.5.2
+> Установка через HACS: добавьте репозиторий `https://github.com/bezuglyy/{repo}` как Custom repository (категория Integration).
 
-## Репозиторий
-- Документация: https://github.com/bezuglyy/navien
-- Issues: https://github.com/bezuglyy/navien/issues
+## Лицензия
+
+MIT
